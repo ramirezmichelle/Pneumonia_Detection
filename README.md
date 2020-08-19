@@ -1,2 +1,2 @@
 # Pneumonia_Detection
-Use Keras to detect and predict if chest xrays are indicative of pneumonia
+Use Keras to detect and predict if chest xrays from NIH Kaggle Dataset are indicative of pneumonia

@@ -20,9 +20,9 @@ The following images show what cases where the patient is healthy (No disease fi
 <img src="images/EDA/pneumonia_xrays.png" width="500"> <img src="images/EDA/pneumonia_intensities.png" width="500">
 
 ## Dataset ##
-Training Dataset - Split to contain 1145 positive cases (pneumonia present) and 1145 negative cases (no pneumonia). The dataset was split in a 50/50 manner to allow our model to train fairly on both situations. The training dataset also had image augmentations done (rescaling, height shift, width shift, rotation by a 20 degree angle, shear, zoom).
+**Training Dataset** - Split to contain 1145 positive cases (pneumonia present) and 1145 negative cases (no pneumonia). The dataset was split in a 50/50 manner to allow our model to train fairly on both situations. The training dataset also had image augmentations done (rescaling, height shift, width shift, rotation by a 20 degree angle, shear, zoom).
 
-Validation Dataset - Split to contain 286 positive cases (pneumonia present) and 1144 negative cases (no pneumonia). The dataset was split in a 20/80 manner to give our model a more realistic set of data, where there is an imbalance in the cases of pneumonia.
+**Validation Dataset** - Split to contain 286 positive cases (pneumonia present) and 1144 negative cases (no pneumonia). The dataset was split in a 20/80 manner to give our model a more realistic set of data, where there is an imbalance in the cases of pneumonia.
 
 ## Model Architecture ##
 
@@ -30,6 +30,8 @@ Validation Dataset - Split to contain 286 positive cases (pneumonia present) and
 
 
 ## Evaluation Metrics ##
+
+### F1 Score ###
 For our model, we decided to optimize for the maximum **F1 score** our model could produce. Because there are class imbalances between cases of pneumonia and no pneumonia, and our dataset is rather small, F1 score was chosen to measure the test's accuracy. 
 
 F1 score combines both precision and recall for binary classification problems, taking into account the amount of **true positives**, **false negatives**, and **false positives**. F1 can be calculated as follows:
@@ -37,14 +39,10 @@ F1 score combines both precision and recall for binary classification problems, 
 <img src= "images/F1_formula.png" width = 300>
 
 F1 score is maximized when there is a balance between precision and recall.
+**A maximum F1 score of 0.5** was achieved at the following values:
+* Threshold:0.679
+* Precision: 0.533
+* Recall: 0.471
 
-### Precision ###
+<img src="images/F1_scores.png" width= "500">
 
-### Recall ###
-
-### Threshold ###
-
-### F1 Score ###
-
-
-## 

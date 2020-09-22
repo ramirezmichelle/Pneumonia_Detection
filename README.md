@@ -33,7 +33,8 @@ Validation Dataset - Split to contain 286 positive cases (pneumonia present) and
 For our model, we decided to optimize for the maximum **F1 score** our model could produce. Because there are class imbalances between cases of pneumonia and no pneumonia, and our dataset is rather small, F1 score was chosen to measure the test's accuracy. 
 
 F1 score combines both precision and recall for binary classification problems, taking into account the amount of **true positives**, **false negatives**, and **false positives**. F1 can be calculated as follows:
-<img src= "images/F1_formula.png" width = 200>
+
+<img src= "images/F1_formula.png" width = 300>
 
 F1 score is maximized when there is a balance between precision and recall.
 

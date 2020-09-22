@@ -53,5 +53,5 @@ With the model built, using a threshold of 0.679 gave us the following results o
 * False Negatives: 9
 * False Positives: 7
 
-Below, is a series of images in a single batch (65 images) and what their prediction by the model was. The images each have a header in the format of **(actual result, predicted result)**, where a *1 is representative of pneumonia* and a *0 indicates no pneumonia *
+Below, is a series of images in a single batch (65 images) and what their prediction by the model was. The images each have a header in the format of **(actual result, predicted result)**, where a **1 is representative of pneumonia and a 0 indicates no pneumonia**
 <img src="images/model_predictions.png" width= "700">

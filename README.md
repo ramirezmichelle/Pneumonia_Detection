@@ -46,3 +46,12 @@ F1 score is maximized when there is a balance between precision and recall.
 
 <img src="images/F1_scores.png" width= "500">
 
+## Results on Validation Dataset
+With the model built, using a threshold of 0.679 gave us the following results on our validation dataset:
+* True Positives: 8
+* True Negatives: 41
+* False Negatives: 9
+* False Positives: 7
+
+Below, is a series of images and what their prediction by the model was. The images each have a header in the format of (actual result, predicted result), where a *1 is representative of pneumonia* and a *0 indicates no pneumonia *
+<img src="images/model_predictions.png" width= "700">

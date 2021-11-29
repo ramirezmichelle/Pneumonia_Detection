@@ -24,11 +24,6 @@ The following images show what cases where the patient is healthy (No disease fi
 
 **Validation Dataset** - Split to contain 286 positive cases (pneumonia present) and 1144 negative cases (no pneumonia). The dataset was split in a 20/80 manner to give our model a more realistic set of data, where there is an imbalance in the cases of pneumonia.
 
-## Model Architecture ##
-
-
-
-
 ## Evaluation Metrics ##
 
 ### F1 Score ###
